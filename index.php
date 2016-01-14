@@ -34,7 +34,7 @@ echo($ttrn);
    <td colspan=2 style="text-align:right"><text style="font-size:30px;color:#FFFFFF;font-family:'Courier New'"><?php echo date("F j, Y "); ?></text></td>
   </tr>
   <tr>
-   <td colspan=2 style="text-align:right"><text style="font-size:14px;color:#FFFFFF;">Proudly served by OpenShift</text></td>
+   <td colspan=2 style="text-align:right"><text style="font-size:14px;color:<?php echo( substr ( md5( $_ENV['HOSTNAME'] ),0,6) ) ; ?>;"> ◉ </text><text style="font-size:14px;color:#FFFFFF;">Proudly served by OpenShift</text></td>
   </tr>
  </table>
 </body>
