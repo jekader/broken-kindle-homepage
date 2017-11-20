@@ -5,7 +5,7 @@ date_default_timezone_set('Europe/Prague');
 <html>
 <head>
 <meta http-equiv="refresh" content="<?php 
-$working_hours = range(08,19);
+$working_hours = range('08','19');
 if (in_array(date("G"),$working_hours))
     {
         $ttrn = '61'-date("s");
